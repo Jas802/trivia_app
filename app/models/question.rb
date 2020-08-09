@@ -1,3 +1,4 @@
 class Question < ApplicationRecord
-    has_may :answers
+    has_many :answers
+    validates :title, presence: true
 end
