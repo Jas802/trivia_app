@@ -1,5 +1,8 @@
 module Api
-    module v1
-
+    module V1
+        class AnswersController < ApplicationController
+            
+        
+        end
     end
 end
