@@ -25,7 +25,7 @@ module Api
             def update
                 question = Question.find(params[:id])
 
-                if question.update(article_params)
+                if question.update(question_params)
                     render json: {status: 'SUCCESS', message:'Updated question', data: question},status: :ok
                 else
                     render json: {status: 'ERROR', message:'Question not updated',
