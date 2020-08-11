@@ -45,7 +45,7 @@ module Api
 
             private
 
-            def questions_params
+            def question_params
                 params.permit(:title)
             end
         end

@@ -1,24 +1,12 @@
-# README
+Todos:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Finish creating Q&A Databases
 
-Things you may want to cover:
+Start frontend Developement
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Frontend objectives:
+Opening card where users can inout a name
+User must inout a name or causes a popup
+Submit event starts quiz and timer.
+Submitting ansers stops the quiz.
+Score displays correct answers and time of completion.
