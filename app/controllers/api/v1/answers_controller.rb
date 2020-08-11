@@ -12,7 +12,7 @@ module Api
             end
 
             def create
-                answer = answer.new(answer_params)
+                answer = Answer.new(answer_params)
                 
                 if answer.save
                     render json: {status: 'SUCCESS', message:'Saved answer', data: answer},status: :ok
@@ -43,7 +43,7 @@ module Api
             private
 
             def answer_params
-                params.permit(:title, :question_id)
+                params.permit(:response, :question_id)
             end
         end
     end
