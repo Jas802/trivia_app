@@ -3,7 +3,10 @@ module Api
         class QuestionsController < ApplicationController
             def index
                 questions = Question.all
-                render json: {status: 'SUCCESS', message:'Loaded questions', data: questions},status: :ok
+                options = {
+                    include: [:answers]
+                }
+                render json: QuestionSerializer.new(questions, options) #{status: 'SUCCESS', message:'Loaded questions', data: questions},status: :ok
             end
 
             def show
