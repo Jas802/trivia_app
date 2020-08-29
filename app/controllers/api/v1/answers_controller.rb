@@ -43,7 +43,7 @@ module Api
             private
 
             def answer_params
-                params.permit(:response, :question_id)
+                params.permit(:response, :question_id, :correct_answer)
             end
         end
     end

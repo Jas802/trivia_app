@@ -4,7 +4,7 @@ module Api
             def index
                 questions = Question.all
                 options = {
-                    include: [:answers]
+                    include: [:answers, :correct_answer]
                 }
                 render json: QuestionSerializer.new(questions, options) #{status: 'SUCCESS', message:'Loaded questions', data: questions},status: :ok
             end
