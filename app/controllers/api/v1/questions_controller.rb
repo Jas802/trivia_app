@@ -6,7 +6,7 @@ module Api
                 options = {
                     include: [:answers, :correct_answer]
                 }
-                render json: QuestionSerializer.new(questions, options) #{status: 'SUCCESS', message:'Loaded questions', data: questions},status: :ok
+                render json: QuestionSerializer.new(questions, options) #sets up 'relationship' object
             end
 
             def show
